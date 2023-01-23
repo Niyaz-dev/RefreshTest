@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set Interval Testing</title>
+</head>
+<body style="margin: 0; width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center">
+<div style="margin: auto">
+    Test setInterval
+    <br>
+    <span id="time"></span>
+</div>
+<script>
+    setInterval(() => {
+        time.innerHTML = 'Текущее время: ' +  new Date().toLocaleString()
+    }, 1000)
+</script>
+</body>
+</html>
